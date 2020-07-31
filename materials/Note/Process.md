@@ -64,10 +64,6 @@ import org.junit.Test;
 
 根據 [wikipedia](https://en.wikipedia.org/wiki/JUnit)， JUnit 是 Java 的 unit testing framework。然後什麼是 unit test 呢？（之前在工作中常聽到”單元測試“這個概念。）根據 [wikipedia](https://zh.wikipedia.org/zh-tw/%E5%8D%95%E5%85%83%E6%B5%8B%E8%AF%95) ，單元測試就是對模組進行測試，好像特別來介紹這個有點多餘。當看完這個[視頻](https://www.youtube.com/watch?v=O1XnFHdsjYU)之後，直接用代碼和例子就很清晰怎樣使用 JUnit 了。只不過 VS code 不像 Eclipse 那麼方便導入 org.junit 而已。
 
-[【Java】VS Code导入jar包及进行JUnit单元测试](https://www.cnblogs.com/ME-WE/p/12500766.html) 這個帖子很好地講解了如何在 Eclipse 中導入和測試。
-
-[JUnit Testing in VS Code](https://www.youtube.com/watch?v=60yrTfVdFwo) 這是 VS code 版本。
-
 VS code 需要在 .vscode 中的 setting.json 添加以下內容：
 
 ```json
@@ -79,7 +75,15 @@ VS code 需要在 .vscode 中的 setting.json 添加以下內容：
 }
 ```
 
-才可以順利導入 JUnit 包
+才可以順利導入 JUnit 包。
+
+[【Java】VS Code导入jar包及进行JUnit单元测试](https://www.cnblogs.com/ME-WE/p/12500766.html) 這個帖子很好地講解了如何在 Eclipse 中導入和測試。
+
+[JUnit Testing in VS Code](https://www.youtube.com/watch?v=60yrTfVdFwo) 這是 VS code 版本。
+
+成功進行 JUnit 測試結果如圖：
+
+![JUnit_success](/home/da/Documents/github/Being_Android/materials/Note/JUnit_success.png)
 
 ## #. 待辦事項
 

@@ -1,9 +1,15 @@
 import org.junit.Test;
+
 public class App {
+
+    public static void main(final String args[]) {
+        System.out.println("Testing");
+    }
+
     @Test
     public void tseting() {
-        final Integer a = 10;
-        final Integer b = 10;
-        System.out.println(a.compareTo(b));          
+        final String obj1 = "obj1";
+        final String obj2 = "obj1";
+        System.out.println( obj1.compareTo(obj2));
     }
 }
