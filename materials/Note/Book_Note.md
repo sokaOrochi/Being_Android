@@ -74,8 +74,6 @@ End @ The hidden implementation
 
 #### The hidden implementation:
 
-1. 
-
 ----------------------------------------------------
 
 ## 筆記：
