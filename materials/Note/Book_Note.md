@@ -1,6 +1,6 @@
 # Thinking in Java(4th edition)
 
-End @ The hidden implementation
+End @ Interchangeable objects with polymorphism
 
 ## 摘抄：
 
@@ -55,13 +55,11 @@ End @ The hidden implementation
 
 4. The requests you can make of an object are defined by its interface, ...
 
-   <img src="/home/da/Documents/github/Being_Android/materials/Note/Screenshot/interface.png" alt="interface" style="zoom: 50%;" />
-
    ```java
-   Light lt = new Light(); // type or class: Light , object: lt
+Light lt = new Light(); // type or class: Light , object: lt
    lt.on(); // interface
    ```
-
+   
    
 
 5. The preceding diagram follows the format of the **Unified Modeling Language** (UML). UML 就是一種規範：最開頭是 Type name，中間是 data members，methods 在最後。通常只關系 Type name 和 methods 就可以。（除非你需要自己寫一個 Type / Class。）
@@ -73,6 +71,29 @@ End @ The hidden implementation
 3. ...**each object does one thing well,** but doesn't try to do too much... be purchased... be reused...
 
 #### The hidden implementation:
+
+1. ... **class creators** (those who create new data types) and **client programmers** (the class consumers who use the data types in their application). class creator: 創造 class，client programmer: 使用 class.
+2. **public** means the following element is available to everyone. the **private** keyword, on the other hand, means that no one can access that element except you, ... an inheriting class has access to **protected** members, but not private members... 任何人可以用 public ，只有 class creator 才可以用 private（沒有繼承關系），protected 類似 private，但是可以繼承。
+3. ... **package** access because classes can access the members of other classes in the same package (**library component**),...
+
+#### Reusing the implementation:
+
+1. **Code reuse** is one of the greatest advantages that object-oriented programming languages provide.
+2. Your new **class** can **be made up of** any number and type of **other objects**,... composing a new class from existing classes, this concept is called composition,... "has-a" relationship...
+
+#### Inheritance:
+
+1. ... we can take the existing class, clone it, and then make additions and modifications to the clone... inheritance,...
+2. A base type contains all of the characteristics and behaviors that are shared among the types derived from it. You create a base type to represent the core of your ideas about some objects in your system. From the base type, you derive other types to express the different ways that this core can be realized.
+3. ... the derived class is the same type as the base class.
+4. You simply add brand new methods to the derived class... your base class might also need these additional methods. 在 derived class 裏添加的新 method，要留意 base class 需不需要。
+5. ... differentiate your new class is to change the behavior of an existing base-class method... I'm using the same interface method here, but I want it to do something different for my new type. 不一定在 derived class 裏添加新 method，亦要留意改 base class 裏的 method 來成爲 derived class。
+
+#### Is-a vs. is-like-a relationships:
+
+1. 當在 derived class 裏添加原來 base class 沒有的 method 時，此時 derived class 就不是和 base class 同一個 type 了（is-like-a relationship）。如果只是修改 method 裏的東西，沒有添加新 method，那他們還是同一個 type（is-a relationship）。
+
+#### Interchangeable objects with polymorphism:
 
 ----------------------------------------------------
 
@@ -108,4 +129,5 @@ End @ The hidden implementation
 1. 操蛋，早點看這本書就好了。電腦是意志的放大器。經典。
 2. Class 就是 Type，浮點數也是 Class，只不過系簡單的 Class。
 3. 媽的，形容 OOP 的比喻用得真好。
-4. 如何將問題分拆到每個 object 身上，每個 object 提供咩 service，義務系咩？
+4. 如何將問題分拆到每個 object 身上，每個 object 提供什麼 service，義務是什麼？
+5. 繼承就是知道問題的本質，再發散開去。
