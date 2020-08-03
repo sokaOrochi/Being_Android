@@ -2,6 +2,8 @@
 
 End @ Interchangeable objects with polymorphism
 
+[TOC]
+
 ## 摘抄：
 
 ### Preface:
@@ -51,7 +53,7 @@ End @ Interchangeable objects with polymorphism
 
 2. When you see the word "type" think "class" and vice versa. 
 
-3. ... programmer **defines a class to fit a problem** rather than being forces to use an existing data type (floating point number) that was designed to represent a unit of storage in a machine.  \
+3. ... programmer **defines a class to fit a problem** rather than being forces to use an existing data type (floating point number) that was designed to represent a unit of storage in a machine. 
 
 4. The requests you can make of an object are defined by its interface, ...
 
@@ -60,8 +62,6 @@ Light lt = new Light(); // type or class: Light , object: lt
    lt.on(); // interface
    ```
    
-   
-
 5. The preceding diagram follows the format of the **Unified Modeling Language** (UML). UML 就是一種規範：最開頭是 Type name，中間是 data members，methods 在最後。通常只關系 Type name 和 methods 就可以。（除非你需要自己寫一個 Type / Class。）
 
 #### An object provides services:
