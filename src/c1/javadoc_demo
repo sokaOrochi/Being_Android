@@ -1,0 +1,29 @@
+/**
+ * Some text descring MyClass
+ * 
+ * If there is a longer description, this is where
+ * it would go
+ * 
+ * @author Soka Orochi
+ * @version 6.0 Build 9000 Jan 7, 2003.
+ */
+
+ public class MyClass
+ {
+    // code
+ }
+
+/**
+ * 
+ * Some text descring MyClass
+ * 
+ * If there is a longer description, this is where
+ * it would go
+ * 
+ * @param word
+ * @return
+ */
+ public int myMethod (String word)
+ {
+    // code
+ }
