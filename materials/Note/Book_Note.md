@@ -424,6 +424,8 @@ public class HelloDate {
    *///:~
    ```
 
+<hr/>
+
 ## Coding style
 
 1. ... "camel-casing" ...
