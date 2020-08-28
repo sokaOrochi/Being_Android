@@ -8,6 +8,6 @@ class Demo {
 
 public class e3 {
     public static void main(String[] args) {
-        Demo demo = new Demo();
+        // Demo demo = new Demo();
     }    
 }
