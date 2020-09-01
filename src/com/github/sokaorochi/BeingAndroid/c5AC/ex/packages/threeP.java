@@ -5,9 +5,9 @@ public class threeP {
         System.out.println("the public");
     }
 
-    private static void thePrivate() {
-        System.out.println("the private");
-    }
+    // private static void thePrivate() {
+    //     System.out.println("the private");
+    // }
 
     protected static void theProtected() {
         System.out.println("the protected");
